@@ -20,11 +20,11 @@ import com.example.tandels.issapplication.viewmodel.ResponseDataAdapter;
 
 import java.util.ArrayList;
 
-import static com.example.tandels.issapplication.viewmodel.AppConstants.LATITUDE;
-import static com.example.tandels.issapplication.viewmodel.AppConstants.LONGITUDE;
-import static com.example.tandels.issapplication.viewmodel.AppConstants.REQUEST_LOCATION;
-import static com.example.tandels.issapplication.viewmodel.AppConstants.RESPONSE_RESULT;
-import static com.example.tandels.issapplication.viewmodel.AppConstants.RESPONSE_SERVICE_ACTION;
+import static com.example.tandels.issapplication.util.AppConstants.LATITUDE;
+import static com.example.tandels.issapplication.util.AppConstants.LONGITUDE;
+import static com.example.tandels.issapplication.util.AppConstants.REQUEST_LOCATION;
+import static com.example.tandels.issapplication.util.AppConstants.RESPONSE_RESULT;
+import static com.example.tandels.issapplication.util.AppConstants.RESPONSE_SERVICE_ACTION;
 
 /**
  * MainActivity class

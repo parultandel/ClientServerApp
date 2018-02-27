@@ -10,8 +10,8 @@ import android.util.Log;
 
 import com.example.tandels.issapplication.R;
 
-import static com.example.tandels.issapplication.viewmodel.AppConstants.LOCATION_TRACKER_CLASS;
-import static com.example.tandels.issapplication.viewmodel.AppConstants.REQUEST_LOCATION;
+import static com.example.tandels.issapplication.util.AppConstants.LOCATION_TRACKER_CLASS;
+import static com.example.tandels.issapplication.util.AppConstants.REQUEST_LOCATION;
 
 /**
  * LocationTracker class

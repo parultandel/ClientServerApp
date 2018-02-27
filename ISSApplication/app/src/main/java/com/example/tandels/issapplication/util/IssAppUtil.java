@@ -1,11 +1,11 @@
-package com.example.tandels.issapplication.viewmodel;
+package com.example.tandels.issapplication.util;
 
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 
-public class Utility {
+public class IssAppUtil {
 
     /**
      * convert RISE TIME from milliseconds into "MM-dd-yyyy'T' HH:mm:ss"

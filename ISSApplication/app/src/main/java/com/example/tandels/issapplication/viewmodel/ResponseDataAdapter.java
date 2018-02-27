@@ -9,10 +9,11 @@ import android.widget.TextView;
 
 import com.example.tandels.issapplication.R;
 import com.example.tandels.issapplication.data.model.Response;
+import com.example.tandels.issapplication.util.IssAppUtil;
 
 import java.util.List;
 
-import static com.example.tandels.issapplication.viewmodel.AppConstants.MULTIPLIER_1000;
+import static com.example.tandels.issapplication.util.AppConstants.MULTIPLIER_1000;
 
 /**
  *ResponseDataAdapter class
@@ -38,8 +39,8 @@ public class ResponseDataAdapter extends RecyclerView.Adapter<ResponseDataAdapte
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Response response = responseList.get(position);
-        holder.durationText.setText(context.getString(R.string.string_duration) + (Utility.formateDuration(response.getDuration())));
-        holder.risetimeText.setText(Utility.formateDateTime(response.getRisetime() * MULTIPLIER_1000));
+        holder.durationText.setText(context.getString(R.string.string_duration) + (IssAppUtil.formateDuration(response.getDuration())));
+        holder.risetimeText.setText(IssAppUtil.formateDateTime(response.getRisetime() * MULTIPLIER_1000));
     }
 
     @Override

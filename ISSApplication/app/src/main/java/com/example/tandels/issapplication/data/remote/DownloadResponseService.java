@@ -14,11 +14,11 @@ import java.util.ArrayList;
 import retrofit2.Call;
 import retrofit2.Callback;
 
-import static com.example.tandels.issapplication.viewmodel.AppConstants.DOWNLOAD_RESPONSE_SERVICE;
-import static com.example.tandels.issapplication.viewmodel.AppConstants.LATITUDE;
-import static com.example.tandels.issapplication.viewmodel.AppConstants.LONGITUDE;
-import static com.example.tandels.issapplication.viewmodel.AppConstants.RESPONSE_RESULT;
-import static com.example.tandels.issapplication.viewmodel.AppConstants.RESPONSE_SERVICE_ACTION;
+import static com.example.tandels.issapplication.util.AppConstants.DOWNLOAD_RESPONSE_SERVICE;
+import static com.example.tandels.issapplication.util.AppConstants.LATITUDE;
+import static com.example.tandels.issapplication.util.AppConstants.LONGITUDE;
+import static com.example.tandels.issapplication.util.AppConstants.RESPONSE_RESULT;
+import static com.example.tandels.issapplication.util.AppConstants.RESPONSE_SERVICE_ACTION;
 
 /**
  * Download response data from the server

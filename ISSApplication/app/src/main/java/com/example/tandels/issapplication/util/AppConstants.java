@@ -1,4 +1,4 @@
-package com.example.tandels.issapplication.viewmodel;
+package com.example.tandels.issapplication.util;
 
 /**
  * AppConstants

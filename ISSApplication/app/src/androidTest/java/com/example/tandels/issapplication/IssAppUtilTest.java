@@ -1,6 +1,6 @@
 package com.example.tandels.issapplication;
 
-import com.example.tandels.issapplication.viewmodel.Utility;
+import com.example.tandels.issapplication.util.IssAppUtil;
 
 import junit.framework.Assert;
 
@@ -14,31 +14,31 @@ import org.powermock.core.classloader.annotations.PrepareForTest;
 
 
 @RunWith(MockitoJUnitRunner.class)
-@PrepareForTest(Utility.class)
-public class UtilityTest {
+@PrepareForTest(IssAppUtil.class)
+public class IssAppUtilTest {
 
     private static final String testDateTS = "02-26-2018T 12:00:00";
     private long l;
     private int seconds;
     @Before
     public void setup(){
-        PowerMockito.mockStatic(Utility.class);
+        PowerMockito.mockStatic(IssAppUtil.class);
         l=123456789;
         seconds = 123;
     }
 
     @Test
     public void testformateDateTime(){
-        PowerMockito.when(Utility.formateDateTime(l)).thenReturn(testDateTS);
-        Assert.assertNotNull(Utility.formateDateTime(l));
-        Assert.assertEquals(Utility.formateDateTime(l), testDateTS);
+        PowerMockito.when(IssAppUtil.formateDateTime(l)).thenReturn(testDateTS);
+        Assert.assertNotNull(IssAppUtil.formateDateTime(l));
+        Assert.assertEquals(IssAppUtil.formateDateTime(l), testDateTS);
     }
 
     @Test
     public void testFormatDuration(){
         String expectedFormat="12:00";
-        PowerMockito.when(Utility.formateDuration(seconds)).thenReturn(expectedFormat);
-        Assert.assertNotNull(Utility.formateDuration(seconds));
-        Assert.assertEquals(Utility.formateDuration(seconds),expectedFormat);
+        PowerMockito.when(IssAppUtil.formateDuration(seconds)).thenReturn(expectedFormat);
+        Assert.assertNotNull(IssAppUtil.formateDuration(seconds));
+        Assert.assertEquals(IssAppUtil.formateDuration(seconds),expectedFormat);
     }
 }
